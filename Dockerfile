@@ -47,6 +47,3 @@ RUN apk add --no-cache curl make gcc g++ python linux-headers paxctl libgcc libs
     /usr/lib/node_modules/npm/man /usr/lib/node_modules/npm/doc /usr/lib/node_modules/npm/html
 
 RUN pip install python-magic
-
-#Configure S3
-RUN git clone https://github.com/s3tools/s3cmd.git /tmp/s3cmd && cd /tmp/s3cmd && python setup.py install
